@@ -1,1 +1,6 @@
-{ "cleanUrls": true, "trailingSlash": false }
+{
+  "rewrites": [
+    { "source": "/cards-perguntas", "destination": "/index.html" },
+    { "source": "/cards-perguntas/:slug*", "destination": "/index.html" }
+  ]
+}
