@@ -366,6 +366,38 @@ footer b{color:var(--ink2);}
         </div>
       </div>
 
+      <div class="eat" style="animation-delay:.24s">
+        <div class="eat-top"><div><div class="eat-name">SFMOMA Museum Store</div><div class="eat-type">Design objects · livros · prints</div></div></div>
+        <p class="eat-desc">Para quem ama design: a lojinha do museu é cheia de objetos, papelaria, pôsteres e livros lindos, e dá pra entrar só na loja, sem ingresso. Coladinha nos hotéis de SoMa.</p>
+        <div class="eat-foot">
+          <span class="badge b-star">queridinha de designers</span>
+          <span class="badge b-near">3 min · 780 Mission</span>
+          <span>📍 151 Third St · confira o horário</span>
+          <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=SFMOMA+Museum+Store+San+Francisco" target="_blank">Mapa ↗</a>
+        </div>
+      </div>
+
+      <div class="eat" style="animation-delay:.28s">
+        <div class="eat-top"><div><div class="eat-name">Britex Fabrics</div><div class="eat-type">Tecidos & aviamentos · 4 andares</div></div></div>
+        <p class="eat-desc">Instituição de SF que makers e designers amam: quatro andares de tecidos, botões, fitas e aviamentos do mundo todo. Em Union Square.</p>
+        <div class="eat-foot">
+          <span class="badge b-star">paraíso de quem cria</span>
+          <span class="badge b-near">na Union Square</span>
+          <span>📍 117 Post St · confira o horário</span>
+          <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Britex+Fabrics+San+Francisco" target="_blank">Mapa ↗</a>
+        </div>
+      </div>
+
+      <div class="eat" style="animation-delay:.32s">
+        <div class="eat-top"><div><div class="eat-name">Hayes Valley</div><div class="eat-type">Bairro de design independente</div></div></div>
+        <p class="eat-desc">Pertinho do fim do roteiro (depois das Painted Ladies): ruas tranquilas com boutiques de design autoral, papelaria e decor, tipo Gravel & Gold e Acrimony. É a região com as lojas mais "Paper Source" da cidade.</p>
+        <div class="eat-foot">
+          <span class="badge b-near">perto do Alamo Square</span>
+          <span>📍 Hayes St & Octavia</span>
+          <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Hayes+Valley+San+Francisco+shopping" target="_blank">Mapa ↗</a>
+        </div>
+      </div>
+
     </div>
 
     <div class="tips">
@@ -384,13 +416,13 @@ footer b{color:var(--ink2);}
   <section class="panel" id="eat">
 
     <div class="section-h"><span class="n">MAPA</span> Onde tudo fica, ao redor dos hotéis</div>
-    <p class="section-note">Os três hotéis da equipe e todos os cafés e restaurantes ficam no mesmo cluster de Union Square / SoMa, a poucos minutos a pé. A Milena (Tour Leader) fica em Menlo Park, ~45 min ao sul (perto dos campi): o pino dela está marcado mais ao sul, é só dar zoom out pra ver. Toque num pino pra abrir no Google Maps.</p>
+    <p class="section-note">Os três hotéis da equipe e todos os cafés e restaurantes ficam no mesmo cluster de Union Square / SoMa, a poucos minutos a pé. O hotel da Milena fica em Menlo Park, ~45 min ao sul (perto dos campi): o pino está marcado mais ao sul, é só dar zoom out pra ver. Toque num pino pra abrir no Google Maps.</p>
     <div class="map-wrap"><div id="eatmap"></div></div>
     <div class="map-legend">
       <span><span class="lg-dot lg-o"></span> Cafés &amp; restaurantes</span>
       <span><span class="lg-dot" style="background:var(--black);border:2px solid var(--orange);width:12px;height:12px;border-radius:4px"></span> Hotéis</span>
       <span><span style="color:var(--orange);font-weight:800">&#9733;</span> Destaque (famoso / instagramável)</span>
-      <span><span class="lg-dot lg-sq" style="background:var(--orange)"></span> Hotel da Tour Leader (Milena)</span>
+      <span><span class="lg-dot lg-sq" style="background:var(--orange)"></span> Hotel · Milena</span>
     </div>
 
     <!-- DESTAQUE -->
@@ -732,7 +764,10 @@ footer b{color:var(--ink2);}
       {name:'Westfield SF Centre',type:'Shopping sob a cúpula',lat:37.7841,lng:-122.4076,url:'https://www.google.com/maps/search/?api=1&query=Westfield+San+Francisco+Centre'},
       {name:"Levi's Flagship",type:'Jeans · marca de SF',lat:37.7843,lng:-122.4071,url:'https://www.google.com/maps/search/?api=1&query=Levis+Flagship+Store+Market+St+San+Francisco'},
       {name:'Maiden Lane',type:'Boutiques de luxo · Frank Lloyd Wright',lat:37.7882,lng:-122.4058,url:'https://www.google.com/maps/search/?api=1&query=140+Maiden+Lane+San+Francisco'},
-      {name:'City Lights Booksellers',type:'Livraria histórica · Beat',lat:37.7975,lng:-122.4065,url:'https://www.google.com/maps/search/?api=1&query=City+Lights+Booksellers+San+Francisco'}
+      {name:'City Lights Booksellers',type:'Livraria histórica · Beat',lat:37.7975,lng:-122.4065,url:'https://www.google.com/maps/search/?api=1&query=City+Lights+Booksellers+San+Francisco'},
+      {name:'SFMOMA Museum Store',type:'Design · livros · prints',lat:37.7857,lng:-122.4010,url:'https://www.google.com/maps/search/?api=1&query=SFMOMA+Museum+Store+San+Francisco'},
+      {name:'Britex Fabrics',type:'Tecidos & aviamentos',lat:37.7889,lng:-122.4045,url:'https://www.google.com/maps/search/?api=1&query=Britex+Fabrics+San+Francisco'},
+      {name:'Hayes Valley',type:'Bairro de design independente',lat:37.7765,lng:-122.4242,url:'https://www.google.com/maps/search/?api=1&query=Hayes+Valley+San+Francisco+shopping'}
     ];
     shops.forEach(function(sh){
       const icon=L.divIcon({className:'',html:'<div class="shop-pin"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></div>',iconSize:[25,25],iconAnchor:[12,25],popupAnchor:[0,-24]});
@@ -766,7 +801,7 @@ footer b{color:var(--ink2);}
     {name:'The Clift Royal Sonesta',guests:'Maia, Julia e Thiago',addr:'495 Geary St, 94102',lat:37.7868547,lng:-122.4112321,url:'https://www.google.com/maps?q=495+Geary+St,+San+Francisco,+CA+94102'},
     {name:'Hilton Union Square',guests:'Sonsino',addr:"333 O'Farrell St, 94102",lat:37.7857306,lng:-122.4101172,url:"https://www.google.com/maps?q=333+O'Farrell+St,+San+Francisco,+CA+94102"}
   ];
-  const MEHOTEL = {name:'Residence Inn Palo Alto / Menlo Park',guests:'Milena · Tour Leader',addr:'555 Glenwood Ave, Menlo Park, CA 94025',lat:37.4516,lng:-122.1835,url:'https://www.google.com/maps/search/?api=1&query=Residence+Inn+Palo+Alto+Menlo+Park+555+Glenwood+Ave'};
+  const MEHOTEL = {name:'Residence Inn Palo Alto / Menlo Park',guests:'Milena',addr:'555 Glenwood Ave, Menlo Park, CA 94025',lat:37.4516,lng:-122.1835,url:'https://www.google.com/maps/search/?api=1&query=Residence+Inn+Palo+Alto+Menlo+Park+555+Glenwood+Ave'};
   function initEatMap(){
     const map = L.map('eatmap',{scrollWheelZoom:false}).setView([37.787,-122.408],14);
     window._eatmap = map;
@@ -784,7 +819,7 @@ footer b{color:var(--ink2);}
     });
     (function(){ var h=MEHOTEL;
       var icon=L.divIcon({className:'',html:'<div class="me-pin">M</div>',iconSize:[28,28],iconAnchor:[14,28],popupAnchor:[0,-28]});
-      L.marker([h.lat,h.lng],{icon}).addTo(map).bindPopup('<div class="pop-guests">🏨 Tour Leader · '+h.guests+'</div><div class="pop-name">'+h.name+'</div><div class="pop-addr">📍 '+h.addr+'</div><a class="pop-link" href="'+h.url+'" target="_blank">Abrir no Google Maps ↗</a>');
+      L.marker([h.lat,h.lng],{icon}).addTo(map).bindPopup('<div class="pop-guests">🏨 Hotel · '+h.guests+'</div><div class="pop-name">'+h.name+'</div><div class="pop-addr">📍 '+h.addr+'</div><a class="pop-link" href="'+h.url+'" target="_blank">Abrir no Google Maps ↗</a>');
     })();
     map.fitBounds(pts,{padding:[40,40]});
     setTimeout(function(){ map.invalidateSize(); map.fitBounds(pts,{padding:[40,40]}); },90);
