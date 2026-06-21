@@ -210,6 +210,7 @@ footer b{color:var(--ink2);}
       <span><span class="lg-dot lg-t"></span> Pausa café</span>
       <span><span class="lg-dot" style="background:var(--black);border:2px solid var(--orange);width:12px;height:12px;border-radius:4px"></span> Hotéis</span>
       <span><span class="lg-dot lg-sq" style="background:var(--shop)"></span> Lojas</span>
+      <span><span class="lg-dot lg-sq" style="background:var(--orange)"></span> Hotel · Milena</span>
       <span>Toque num pino pra ver detalhes e abrir no Google Maps</span>
     </div>
 
@@ -439,7 +440,7 @@ footer b{color:var(--ink2);}
   <section class="panel" id="eat">
 
     <div class="section-h"><span class="n">MAPA</span> Onde tudo fica, ao redor dos hotéis</div>
-    <p class="section-note">Os três hotéis da equipe e todos os cafés e restaurantes ficam no mesmo cluster de Union Square / SoMa, a poucos minutos a pé. O hotel da Milena fica em Menlo Park, ~45 min ao sul (perto dos campi): o pino está marcado mais ao sul, é só dar zoom out pra ver. Toque num pino pra abrir no Google Maps.</p>
+    <p class="section-note">Os três hotéis da equipe e todos os cafés e restaurantes ficam no mesmo cluster de Union Square / SoMa, a poucos minutos a pé. O hotel da Milena fica em Menlo Park, ~1h ao sul (perto dos campi): o pino está marcado mais ao sul, é só dar zoom out pra ver. Toque num pino pra abrir no Google Maps.</p>
     <div class="map-wrap"><div id="eatmap"></div></div>
     <div class="map-legend">
       <span><span class="lg-dot lg-o"></span> Cafés &amp; restaurantes</span>
@@ -799,6 +800,10 @@ footer b{color:var(--ink2);}
       L.marker([sh.lat,sh.lng],{icon}).addTo(map).bindPopup('<div class="pop-name">'+sh.name+'</div><div class="pop-addr">🛍 '+sh.type+'</div><a class="pop-link" href="'+sh.url+'" target="_blank">Abrir no Google Maps ↗</a>');
     });
 
+    (function(){ var h=MEHOTEL;
+      var icon=L.divIcon({className:'',html:'<div class="me-pin">M</div>',iconSize:[28,28],iconAnchor:[14,28],popupAnchor:[0,-28]});
+      L.marker([h.lat,h.lng],{icon}).addTo(map).bindPopup('<div class="pop-guests">🏨 Hotel · '+h.guests+'</div><div class="pop-name">'+h.name+'</div><div class="pop-addr">📍 '+h.addr+'</div><a class="pop-link" href="'+h.url+'" target="_blank">Abrir no Google Maps ↗</a>');
+    })();
     map.fitBounds(latlngs,{padding:[40,40]});
   }
   // ---- Eat map (hotéis + cafés/restaurantes) ----
