@@ -36,6 +36,11 @@ a{color:inherit;}
 .head .hsub{font-family:var(--text);font-size:13px;color:#C9C9C9;margin-top:12px;max-width:44ch;line-height:1.55;}
 .head .hsub strong{color:#FFB877;font-weight:700;}
 
+/* BACK BAR */
+.backbar{display:flex;align-items:center;gap:6px;background:var(--black);color:#FFB877;font-family:var(--display);font-weight:700;font-size:13px;text-decoration:none;padding:11px 20px;border-bottom:1px solid #242424;}
+.backbar:hover{color:#fff;}
+.backbar .ba{font-size:16px;line-height:1;}
+
 /* TABS (abas) */
 .tabs{position:sticky;top:0;z-index:20;display:flex;gap:22px;background:var(--black);padding:0 20px;overflow-x:auto;scrollbar-width:none;border-top:1px solid #242424;}
 .tabs::-webkit-scrollbar{display:none;}
@@ -135,7 +140,8 @@ footer b{color:var(--ink2);}
 /* RESPONSIVE — espelha o site principal */
 @media (min-width:768px){
   .sheet{max-width:700px;margin:26px auto 36px;border-radius:18px;box-shadow:0 12px 48px rgba(0,0,0,.14);overflow:hidden;}
-  .head{border-radius:18px 18px 0 0;padding:32px 36px 24px;}
+  .head{padding:32px 36px 24px;}
+  .backbar{padding:11px 36px;}
   .head h1{font-size:38px;}
   .head .hsub{font-size:14px;}
   .tabs{padding:0 36px;}
@@ -155,6 +161,7 @@ footer b{color:var(--ink2);}
 @media (min-width:1200px){
   .sheet{max-width:1000px;}
   .head{padding:40px 50px 30px;}
+  .backbar{padding:11px 50px;}
   .head h1{font-size:46px;}
   .head .hsub{font-size:15px;}
   .tabs{padding:0 50px;}
@@ -173,6 +180,8 @@ footer b{color:var(--ink2);}
 </head>
 <body>
 <div class="sheet">
+
+  <a class="backbar" href="/"><span class="ba">‹</span> Voltar para o Tour Guide</a>
 
   <header class="head">
     <div class="kick">San Francisco · 1 dia</div>
