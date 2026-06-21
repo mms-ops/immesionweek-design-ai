@@ -384,7 +384,7 @@ footer b{color:var(--ink2);}
   <section class="panel" id="eat">
 
     <div class="section-h"><span class="n">MAPA</span> Onde tudo fica, ao redor dos hotéis</div>
-    <p class="section-note">Os três hotéis da equipe e todos os cafés e restaurantes ficam no mesmo cluster de Union Square / SoMa, a poucos minutos a pé. A Milena (Tour Leader) fica em Menlo Park, ~45 min ao sul, perto dos campi, por isso o mapa abre mais aberto. Toque num pino pra abrir no Google Maps.</p>
+    <p class="section-note">Os três hotéis da equipe e todos os cafés e restaurantes ficam no mesmo cluster de Union Square / SoMa, a poucos minutos a pé. A Milena (Tour Leader) fica em Menlo Park, ~45 min ao sul (perto dos campi): o pino dela está marcado mais ao sul, é só dar zoom out pra ver. Toque num pino pra abrir no Google Maps.</p>
     <div class="map-wrap"><div id="eatmap"></div></div>
     <div class="map-legend">
       <span><span class="lg-dot lg-o"></span> Cafés &amp; restaurantes</span>
@@ -785,7 +785,6 @@ footer b{color:var(--ink2);}
     (function(){ var h=MEHOTEL;
       var icon=L.divIcon({className:'',html:'<div class="me-pin">M</div>',iconSize:[28,28],iconAnchor:[14,28],popupAnchor:[0,-28]});
       L.marker([h.lat,h.lng],{icon}).addTo(map).bindPopup('<div class="pop-guests">🏨 Tour Leader · '+h.guests+'</div><div class="pop-name">'+h.name+'</div><div class="pop-addr">📍 '+h.addr+'</div><a class="pop-link" href="'+h.url+'" target="_blank">Abrir no Google Maps ↗</a>');
-      pts.push([h.lat,h.lng]);
     })();
     map.fitBounds(pts,{padding:[40,40]});
     setTimeout(function(){ map.invalidateSize(); map.fitBounds(pts,{padding:[40,40]}); },90);
