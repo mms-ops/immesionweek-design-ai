@@ -1,6 +1,7 @@
 {
   "rewrites": [
     { "source": "/cards-perguntas", "destination": "/index.html" },
-    { "source": "/cards-perguntas/:slug*", "destination": "/index.html" }
+    { "source": "/cards-perguntas/:slug*", "destination": "/index.html" },
+    { "source": "/sugestao-roteiro-domingo", "destination": "/sugestao-roteiro-domingo.html" }
   ]
 }
